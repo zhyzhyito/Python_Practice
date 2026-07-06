@@ -180,9 +180,15 @@ if VoterIsADULT and age >= 18:
 else:
     print('You are not VOTER')
 
-age = 19
-employed = False
-print(age or employed)
+age1 = 120
+employed = True
+
+if age1 < 120 or employed:
+    print('NICE')
+else:
+    print('NOT NICE')
+
+
 
 
 
