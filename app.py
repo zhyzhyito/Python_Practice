@@ -149,13 +149,36 @@
 #print(my_var) # 6
 
 
-num = 0
-name = "z-zzz-z-zz-zz-z"
 
-for i in name:
-    if i == "z":
-        num += 1
-print(f'Total Z letter: {num}')
+# How Do Conditional Statements and Logical Operators Work?\
+#print(3 > 4) # False
+#print(3 < 4) # True
+#print(3 == 4) # False
+#print(4 == 4) # True
+#print(3 != 4) # True
+#print(3 >= 4) # False
+#print(3 <= 4) # True
+
+#ge = 18
+
+#if age >= 18:
+#    print('ADULT!')
+
+#elif age >= 13:
+#    print('TEENAGER')
+#elif age >= 18:
+#    print('ADULT')
+#else:
+#    print('NOT TODAY')
+
+#THIS IS HOW TO USE NESTED CONDITIONAL LOOP
+
+
+
+
+
+
+
 
 
 
