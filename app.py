@@ -189,8 +189,50 @@ else:
     print('NOT NICE')
 
 
+is_citizen = True
+age = 25
+if is_citizen:
+    if age >= 18:
+        print('VOTE!')
+    else:
+        print('DO NOTE VOTE!')
 
 
+is_admin = False
+if not is_admin:
+    print('Access Dedined')
+else:
+    print('Access Granted')
+
+
+is_admin = True
+if not is_admin:
+    print('Access Dedined')
+else:
+    print('Access Granted')
+
+
+#Q1: What will the following code output?
+age = 20
+has_ticket = True
+
+if age >= 18 and has_ticket:
+    print("You can watch the movie.")
+else:
+    print("You can't watch the movie.")
+
+    #Answer: 'You can watch the movie'
+
+#Q2: Which of the following is NOT considered a falsy value in Python?
+
+    #Answer: 'False'
+
+#3: What happens when Python evaluates the expression x or y?
+
+    #Answer: It returns x if it evaluates to True,-
+    # and skips evaluating y
+
+#---------------------------
 
 
 
