@@ -138,15 +138,24 @@
 #greet *= 3
 
 #print(greet) # HelloHelloHello
-my_var = 5
+#my_var = 5
 
-print(+my_var)   # 5
-print(++my_var)  # 5
-print(+++my_var) # 5
+#print(+my_var)   # 5
+#print(++my_var)  # 5
+#print(+++my_var) # 5
 
-my_var += 1
+#my_var += 1
 
-print(my_var) # 6
+#print(my_var) # 6
+
+
+num = 0
+name = "z-zzz-z-zz-zz-z"
+
+for i in name:
+    if i == "z":
+        num += 1
+print(f'Total Z letter: {num}')
 
 
 
