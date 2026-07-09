@@ -245,11 +245,22 @@
 #which lets you prompt the user for input:
 
 
-name = input('What is your name?') # User types "Kolade" and presses Enter  
-print('Hello', name) # Output: Hello Kolade
+#name = input('What is your name?')
+#print('Hello', name)
+
+#print(int(3.14)) # 3
+#print(int('42')) # 42
+#print(int(True)) # 1
+#print(int(False)) # 0 
+
+#rint( 'Hi' )
 
 
+#def calculate_sum(a, b):
+#    return(a + b)
 
+#my_sum = calculate_sum(3,1)
+#print(my_sum)
 
 
 
