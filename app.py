@@ -262,7 +262,99 @@
 #my_sum = calculate_sum(3,1)
 #print(my_sum)
 
+#What Is Scope in Python and How Does It Work?
 
 
+#To correctly determine scope, Python follows the LEGB rule, which stands for the following:
 
+#Local scope (L): Variables defined in functions or classes.
+
+#Enclosing scope (E): Variables defined in enclosing or nested functions.
+
+#Global scope (G): Variables defined at the top level of the module or file.
+
+#Built-in scope (B): Reserved names in Python for predefined functions, modules, keywords, and objects.
+
+#def my_func():
+#    my_var = 10
+#    print(my_var)
+
+#my_func()
+
+#print(my_var)
+
+
+#def outer_func():
+#    msg = 'Hello there!'
+#    res = ""
+
+#    def inner_func():
+#        nonlocal res
+#        res = 'How are you?'
+#        print(msg)
+
+#    inner_func()
+#    print(res)
+
+#outer_func()
+
+
+#my_var = 100
+
+#def show_var():
+#    print(my_var)
+
+#show_var()
+#print(my_var)
+
+#my_var_1 = 7
+
+#def show_vars():
+#    global my_var_2
+#    my_var_2 = 10
+#    print(my_var_1)
+#    print(my_var_2)
+
+#show_vars() # 7 10
+
+# my_var_2 is now a global variable and can be accessed anywhere in the program
+#print(my_var_2) # 10
+
+
+#my_var = 10  # A global variable
+
+#def change_var():
+#    global my_var  # Allows modification of a global variable
+#    my_var = 20
+
+#change_var()
+
+#print(my_var)  # my_var is now modified globally to 20
+
+
+#print(str(45)) # '45'
+#print(type(3.14)) # <class 'float'>
+#print(isinstance(3, str)) # False
+
+def apply_discount(price, discount):
+    # 1. Check kung numero ang price
+    if not isinstance(price, (int, float)):
+        return "The price should be a number."
+    
+    # 2. Check kung numero ang discount
+    if not isinstance(discount, (int, float)):
+        return "The discount should be a number."
+    
+    # 3. Check kung valid ang range ng price
+    if price <= 0:
+        return "The price should be greater than 0."
+    
+    # 4. Check kung valid ang range ng discount
+    if discount < 0 or discount > 100:
+        return "The discount should be between 0 and 100."
+    
+    # Ibabawas ang discount amount sa orihinal na price
+    final_price = price - (price * (discount / 100))
+    return final_price
+        
 
