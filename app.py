@@ -356,14 +356,17 @@
     # Ibabawas ang discount amount sa orihinal na price
 #    final_price = price - (price * (discount / 100))
 #    return final_price
-        
 
-alphabet = 'abcdefghijklmnopqrstuvwxyz'
-shift = 5  
-shifted_alphabet = alphabet[shift:] + alphabet[:shift]
 
-translation_table = str.maketrans(alphabet, shifted_alphabet)
-text = 'hello world'
+def caesar(text, shift):
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    shifted_alphabet = alphabet[shift:] + alphabet[:shift]
 
-encrypted_text = text.translate(translation_table)
+    translation_table = str.maketrans(alphabet, shifted_alphabet)
+    return text.translate(translation_table)
+
+encrypted_text = caesar("freeCodeCamp", 3)
 print(encrypted_text)
+
+    
+
