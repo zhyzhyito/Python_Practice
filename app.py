@@ -356,17 +356,39 @@
     # Ibabawas ang discount amount sa orihinal na price
 #    final_price = price - (price * (discount / 100))
 #    return final_price
+        
+def caesar(text, shift, encrypt=True):
 
+    if not isinstance(shift, int):
+        return 'Shift must be an integer value.'
+    if shift < 1 or shift > 25:
+        return 'Shift must be an integer between 1 and 25.'
+    if not encrypt:
+        shift = -shift
 
-def caesar(text, shift):
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
     shifted_alphabet = alphabet[shift:] + alphabet[:shift]
+    translation_table = str.maketrans(alphabet + alphabet.upper(), shifted_alphabet + shifted_alphabet.upper())
 
-    translation_table = str.maketrans(alphabet, shifted_alphabet)
     return text.translate(translation_table)
 
-encrypted_text = caesar("freeCodeCamp", 3)
+def encrypt(text, shift):
+    return caesar(text, shift, encrypt=True)
+
+def decrypt(text, shift):
+    return caesar(text, shift, encrypt=False)
+
+
+encrypted_text = 'Pbhentr vf sbhaq va hayvxryl cynprf'
+decrypted_text = decrypt(encrypted_text, 3)
 print(encrypted_text)
+
+
+#Now you're going to test the decrypt function. Replace the value assigned to encrypted_text with the following string, which represents a message to decrypt: Pbhentr vf sbhaq va hayvxryl cynprf.
+
+#Then, declare a variable named decrypted_text and assign it a call to decrypt with encrypted_text as it first argument and a shift of 13 as the second argument.
+
+#Finally, print the decrypted_text on the terminal. With that, the Caesar cipher is complete.
 
     
 
