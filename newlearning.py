@@ -87,3 +87,52 @@
 
 #Which of the following functions is used to count the times a substring appears in a string?
 #Answer: count()
+
+
+#What Are Lists and How Do They Work?
+
+#cities = ['Los Angeles', 'London', 'Tokyo']
+#cities[0]
+#print(cities[-1])
+
+#dev = 'Zhyrus'
+#list(dev)
+#print(list(dev))
+
+#num = [1, 2, 3, 4, 5]
+#len(num)
+#print(len(num))
+
+
+#prolang = ['Python', 'Java', 'C++', 'JavaScript']
+#del prolang[2]
+#print(prolang)
+
+#'C++' in prolang
+#'JavaScript' in prolang
+
+
+dev = ['Zhyrus', 27, ['Naomi', 'John']]
+
+dev[2][0]
+print(dev[2][0])
+
+
+dev1 = ['Zhyrus', 27, 'Python Developer']
+name, age, occupation = dev1
+print(name,age,occupation)
+
+dev3 = ['Zhyrus', 27, 'Python Developer']
+name, *rest = dev3
+
+print(name)
+print(rest)
+
+dess = ['cake', 'ice cream', 'cookies', 'brownies', 'pie']
+dess[1:4]
+print(dess[1:4])
+
+
+numbers = [1, 2, 3, 4, 5, 6]
+numbers[1:2]
+print(numbers[1::2])
