@@ -112,27 +112,28 @@
 #'JavaScript' in prolang
 
 
-dev = ['Zhyrus', 27, ['Naomi', 'John']]
+#dev = ['Zhyrus', 27, ['Naomi', 'John']]
 
-dev[2][0]
-print(dev[2][0])
-
-
-dev1 = ['Zhyrus', 27, 'Python Developer']
-name, age, occupation = dev1
-print(name,age,occupation)
-
-dev3 = ['Zhyrus', 27, 'Python Developer']
-name, *rest = dev3
-
-print(name)
-print(rest)
-
-dess = ['cake', 'ice cream', 'cookies', 'brownies', 'pie']
-dess[1:4]
-print(dess[1:4])
+#dev[2][0]
+#print(dev[2][0])
 
 
-numbers = [1, 2, 3, 4, 5, 6]
-numbers[1:2]
-print(numbers[1::2])
+#dev1 = ['Zhyrus', 27, 'Python Developer']
+#name, age, occupation = dev1
+#print(name,age,occupation)
+
+#dev3 = ['Zhyrus', 27, 'Python Developer']
+#name, *rest = dev3
+
+#print(name)
+#print(rest)
+
+#dess = ['cake', 'ice cream', 'cookies', 'brownies', 'pie']
+#dess[1:4]
+#print(dess[1:4])
+
+
+#numbers = [1, 2, 3, 4, 5, 6]
+#numbers[1:2]
+#print(numbers[1::2])
+
